@@ -1,0 +1,26 @@
+.fade-in,
+.slide-up,
+.scale-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.scale-up {
+  transform: scale(0.98);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}

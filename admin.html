@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | HIS SAFE SPACE</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="His Safe Space homepage">
+        <span class="brand-mark">H</span>
+        <span class="brand-text">His Safe Space</span>
+      </a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="get-help.html">Get Help</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section" data-animate>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="eyebrow">Admin Dashboard</p>
+          <h1>Manage events and announcements.</h1>
+          <p class="page-subtitle">This lightweight dashboard stores data locally in your browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-panel section" data-animate>
+      <div class="container admin-grid">
+        <form id="event-form" class="admin-card" aria-label="Add or edit event">
+          <h2>Event Management</h2>
+          <label for="event-title">Title</label>
+          <input id="event-title" name="title" type="text" required />
+          <label for="event-date">Date</label>
+          <input id="event-date" name="date" type="date" required />
+          <label for="event-description">Description</label>
+          <textarea id="event-description" name="description" rows="4" required></textarea>
+          <label for="event-image">Image URL</label>
+          <input id="event-image" name="image" type="url" placeholder="https://example.com/image.jpg" required />
+          <button type="submit" class="button button-primary">Save Event</button>
+          <button type="button" id="clear-form" class="button button-secondary">Clear</button>
+          <input type="hidden" id="event-id" />
+        </form>
+
+        <div class="admin-card admin-content">
+          <div class="events-admin">
+            <h2>Saved Events</h2>
+            <div id="events-admin-list"></div>
+          </div>
+          <div class="announcements-admin">
+            <h2>Announcements</h2>
+            <label for="announcement-text">New announcement</label>
+            <textarea id="announcement-text" rows="3" placeholder="Type an announcement..."></textarea>
+            <button id="add-announcement" class="button button-primary">Add Announcement</button>
+            <div id="announcements-admin-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">His Safe Space</a>
+        <p>A calm hub for young men seeking guidance, brotherhood, and healing.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="get-help.html">Get Help</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="social-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 His Safe Space. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

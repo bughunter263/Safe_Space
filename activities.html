@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities | HIS SAFE SPACE</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="His Safe Space homepage">
+        <span class="brand-mark">H</span>
+        <span class="brand-text">His Safe Space</span>
+      </a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="get-help.html">Get Help</a></li>
+          <li><a href="activities.html" aria-current="page">Activities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section" data-animate>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="eyebrow">Activities</p>
+          <h1>Strong connections through shared experiences.</h1>
+          <p class="page-subtitle">Events, gatherings, and meaningful projects for young men ready to grow together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section" data-animate>
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Upcoming Events</p>
+          <h2>Events designed to foster healing, trust, and community.</h2>
+        </div>
+        <div id="events-list" class="event-grid"></div>
+      </div>
+    </section>
+
+    <section class="gallery section" data-animate>
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Past Events Gallery</p>
+          <h2>Moments of connection captured in a warm, natural way.</h2>
+        </div>
+        <div class="masonry-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="announcements section" data-animate>
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Announcements</p>
+          <h2>Community updates and upcoming activities.</h2>
+        </div>
+        <div id="announcements-list" class="announcement-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="Event gallery image" />
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">His Safe Space</a>
+        <p>A calm hub for young men seeking guidance, brotherhood, and healing.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="get-help.html">Get Help</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="social-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 His Safe Space. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/activities.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

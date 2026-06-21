@@ -1,0 +1,23 @@
+[
+  {
+    "id": "event-1",
+    "title": "Open Conversation Circle",
+    "date": "2026-08-01",
+    "description": "A guided peer circle for young men to share and listen in a safe environment.",
+    "image": "assets/images/event-01.svg"
+  },
+  {
+    "id": "event-2",
+    "title": "Weekend Reflection Workshop",
+    "date": "2026-08-15",
+    "description": "A journaling and self-awareness workshop focused on emotional wellbeing.",
+    "image": "assets/images/event-02.svg"
+  },
+  {
+    "id": "event-3",
+    "title": "Community Support Meetup",
+    "date": "2026-09-05",
+    "description": "A meetup to connect with local peers and discuss personal growth strategies.",
+    "image": "assets/images/event-03.svg"
+  }
+]
